@@ -1,109 +1,45 @@
 public class patter {
-
     public static void main(String[] args) {
-        int n = 5;
-
-// *
-// **
-// ***
-// ****
-// *****
+        //star pattern
+        int n=4;
         for(int i=1;i<=n;i++){
             for(int j=1;j<=i;j++){
                 System.out.print("*");
             }
             System.out.println();
-          
         }
-        System.out.println("_______________________________-");
-     for( int i=1;i<=n;i++){
-        for(int j=1;j<=n-i+1;j++){
-            System.out.print("*");
-        }
-        System.out.println();
-     }
-        System.out.println("__________________________________________");
+        System.out.println("______________________________________________________");
 
-        for(int i=1;i<=n;i++){
+        //inverted star pattern
+        int p=5;
+        for(int i=0;i<p;i++){
+            for(int j=1;j<=p-i;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        System.out.println("___________________________________________________");
+        //haif pyreamid
+        int q=5;
+        for(int i=1;i<=q;i++){
             for(int j=1;j<=i;j++){
                 System.out.print(j);
             }
             System.out.println();
         }
-        System.err.println("__________________________________________________");
+        //inverted and rotated star paramud\
+        int a=5;
+        for(int i=1;i<=a;i++){
+            for(int j=1;j<=a-1;j++){
+                System.out.print(" ");
 
-        
-for (int i = 1; i <= n; i++) {
- 
-    for (int j = 1; j < i; j++) {
-        System.out.print(" ");
+            }
+            for(int j=1;j<=i;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
     }
     
-    for (int j = 1; j <= n - i + 1; j++) {
-        System.out.print("*");
-    }
-   
-    System.out.println();
-}
-System.out.println("_____________________________________");
-
-for(int i=1;i<=n;i++){
-    for(int j=1;j<=i;j++){
-        System.out.print("*");
-    }
-    System.out.println();
-}
-
-System.out.println("_______________________________");
-  for(int i=1;i<=n;i++){
-    for(int j=n;j>=i;j--){
-        System.out.print("*");
-    }
-    System.out.println();
-  }
-  System.out.println("________________________________________");
-
-  for(int i=1;i<=n;i++){
-    for(int j=n;j>=i;j--){
-        System.out.print(" ");
-    }
-    for(int j=1;j<=i;j++){
-        System.out.print("*");
-    }
-    System.out.println();
-  }
-  System.out.println("________________________________________");
-
-// *****
-// *****
-// *****
-// *****
-// *****
-
-for(int i=1;i<=n;i++){
-    for(int j=1;j<=n;j++){
-        System.out.print("*");
-    }
-    System.out.println();
-}
-System.out.println("___________________________________");
-//     *
-//    ***
-//   *****
-//  *******
-// *********
-for(int i=1;i<=n;i++){
-    //space
-
-    for(int j=1;j<=n-i;j++){
-        System.out.print(" ");
-    }
-    for(int j=1;j<=2*i-1;j++){
-        System.out.print("*");
-    }
-    System.out.println();
-}
-
-
-    }
 }
